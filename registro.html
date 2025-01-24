@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANBAN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+    <header class="flex justify-between">
+        <div class="welcome">
+            <h1>Formulario de <br> Registro</h1>
+        </div>
+
+        <div class="hidden">
+            <button>Agregar Tarea</button> <br>
+        </div>
+
+        <div class="logo"> 
+            <h1>KANBAN</h1> <img src="img/kanban-svgrepo-com.svg" alt="Kanban">
+        </div>
+        
+    </header>
+    <section>
+    <div class="formulario">
+    <form id="formu">
+        <label>Nombre y apellidos:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo Juan Garcia">
+        <br><br>    
+        <label>Nombre de usuario:</label>
+        <input type="text" name="nombreUsu" id="nombreUsu" placeholder="Ejemplo Juang12">
+        <br><br>
+        <label>Correo Electronico:</label>
+        <input type="email" name="email" id="email" placeholder="Juang12@ejemplo.com">
+        <br><br>
+        <label>Contraseña:</label>
+        <input type="password" name="password" id="password" placeholder="Debe ser secreta">
+        <br><br>
+        <button type="submit">Registrarse</button>
+    </form>
+    </div>
+    </section>
+</body>
+</html>
