@@ -43,6 +43,7 @@ section{
     margin-top: 14vh;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
 }
 
@@ -122,6 +123,9 @@ section{
     background-color: rgb(255, 192, 192);
     padding: 5vh;
     border-radius: 2vh;
+}
+.botonesTarget img{
+    width: 20px;
 }
 
 @media (max-width: 320px) {
