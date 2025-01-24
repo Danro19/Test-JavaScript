@@ -1,9 +1,21 @@
 {
-    
-    "tareas":[{
-        "tareasPendientes":[],
-        "tareasProceso":[],
-        "tareasHechas":[]
-    }],
-    "usuarios":[]
+  "tareas": [
+    {
+      "nombre": "daniel",
+      "descripcion": "vamos a navegar por altamar",
+      "fechaInicio": "2025-01-23",
+      "fechaFin": "2025-01-24",
+      "task": "2",
+      "id": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "nombre": "daniel",
+      "nombreUsu": "danro19",
+      "email": "danrodri1911@gmail.com",
+      "password": "123",
+      "id": 1
+    }
+  ]
 }

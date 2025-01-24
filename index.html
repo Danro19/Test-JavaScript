@@ -16,8 +16,9 @@
             <button id="registrarse">Registrate</button>
         </div>
 
-        <div class="hidden">
-            <button>Agregar Tarea</button> <br>
+        <div class="">
+            <button id="addTask">Agregar Tarea</button> <br>
+            <button id="cargarTareas">Cargar las Tareas</button>
         </div>
 
         <div class="logo"> 
@@ -25,7 +26,34 @@
         </div>
         
     </header>
-
+    
+    <dialog id="modalAddTask" >
+        <form id="formulary">
+            <label> Nombre de la tarea </label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label > descripcion </label>
+            <input type="text" name="descripcion" id="descripcion">
+            <br>
+            <label>Fecha de Inicio </label>
+            <input type="date" name="fechaInicio" id="fechaInicio">
+            <br>
+            <label>Fecha de Fin</label>
+            <input type="date" name="fechaFin" id="fechaFin">
+            <br>
+            <label>Tipo de tarea</label>
+            <select name="task" id="task">
+                <option value="1">do</option>
+                <option value="2">doing</option>
+                <option value="3">done</option>
+            </select>
+            <br>
+            
+            <button type="submit">Crear Tarea</button>
+            <button id="close">Cerrar</button>
+        </form>
+    </dialog>
+            
     <section>
         <div class="do">
             <h2>DO</h2>
