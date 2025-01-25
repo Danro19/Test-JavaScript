@@ -218,7 +218,7 @@ function loadTasks() {
   
     boxTask.appendChild(div);
   
-    const deleteButton = div.querySelector(".delete");
+    const deleteButton = div.document.getElementById("eliminar");
     deleteButton.addEventListener("click", () => {
       const taskIndex = tasks.findIndex((task) => task.id === taskWithId.id);
       if (taskIndex > -1) {
