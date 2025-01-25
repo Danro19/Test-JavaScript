@@ -16,7 +16,7 @@ try{
         headers:{"Content-Type": "application/json"},
         body: JSON.stringify(nuevoUsuario)
     });
-    if(response.ok){
+    if(response.ok && response!== ""){
         const jsonResponse = await response.json();
         const {email, nombre, password,nombreUsu } = jsonResponse 
         console.log("Usuario guardado", jsonResponse)
@@ -27,12 +27,18 @@ try{
 
 } catch(Error){
     console.log(Error)
-}
+} 
 }
 form.addEventListener("submit", (event)=>{
 const nuevoUsuario = Alldatos(event);
-if (nuevoUsuario){
+if (nuevoUsuario !== ""){
     postData(nuevoUsuario)
     alert("¡Registro exitoso! Ahora serás redirigido a tu cuenta.");
 }
 });
+
+const volverInicio = document.getElementById("volverInicio")
+
+volverInicio.addEventListener("click",()=>{
+    window.location.href = "/index.html";
+})
